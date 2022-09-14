@@ -10,11 +10,11 @@ export default class CreateEmployee extends React.Component {
     }
 
     handleChange = event => {
-        this.setState({ id: event.target.value });
+        this.setState({id: event.target.value});
     }
 
     handleUpdate = () => {
-        const { id } = this.state.id;
+        const {id} = this.state.id;
 
         API.put(`users/${id}`)
             .then(res => {

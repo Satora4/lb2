@@ -11,14 +11,14 @@ export default class PersonList extends React.Component {
         API.get(`users`)
             .then(res => {
                 const persons = res.data;
-                this.setState({ persons });
+                this.setState({persons});
             })
     }
 
     render() {
         return (
             <ul>
-                { this.state.persons.map(person => <li>{person.id}, {person.user.name}</li>)}
+                {this.state.persons.map(person => <li>{person.id}, {person.user.name}</li>)}
             </ul>
         )
     }

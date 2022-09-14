@@ -5,14 +5,14 @@ import PersonListDelete from "./personList/PersonListDelete";
 import PersonListPut from "./personList/PersonListPut";
 
 function App() {
-  return (
-      <div>
-          <PersonListGet></PersonListGet>
-          <PersonListPost></PersonListPost>
-          <PersonListDelete></PersonListDelete>
-          <PersonListPut></PersonListPut>
-      </div>
-  );
+    return (
+        <div>
+            <PersonListGet></PersonListGet>
+            <PersonListPost></PersonListPost>
+            <PersonListDelete></PersonListDelete>
+            <PersonListPut></PersonListPut>
+        </div>
+    );
 }
 
 export default App;

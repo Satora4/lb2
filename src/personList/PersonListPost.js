@@ -8,7 +8,7 @@ export default class PersonList extends React.Component {
     }
 
     handleChange = event => {
-        this.setState({ name: event.target.value });
+        this.setState({name: event.target.value});
     }
 
     handleSubmit = event => {
@@ -18,7 +18,7 @@ export default class PersonList extends React.Component {
             name: this.state.name
         };
 
-        API.post(`users`, { user })
+        API.post(`users`, {user})
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -31,7 +31,7 @@ export default class PersonList extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Person Name:
-                        <input type="text" name="name" onChange={this.handleChange} />
+                        <input type="text" name="name" onChange={this.handleChange}/>
                     </label>
                     <button type="submit">Add</button>
                 </form>
