@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import PersonListGet from "./personList/PersonListGet";
+import PersonListPost from "./personList/PersonListPost";
+import PersonListDelete from "./personList/PersonListDelete";
+import PersonListPut from "./personList/PersonListPut";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <PersonListGet></PersonListGet>
+          <PersonListPost></PersonListPost>
+          <PersonListDelete></PersonListDelete>
+          <PersonListPut></PersonListPut>
+      </div>
   );
 }
 
