@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "user": {
+        "name": "Joel Vontobel"
+      },
+      "id": 1
+    },
+    {
+      "user": {
+        "name": "Quentin Herren"
+      },
+      "id": 2
+    },
+    {
+      "user": {
+        "name": "Niculin Steiner"
+      },
+      "id": 3
+    }
+  ]
+}
