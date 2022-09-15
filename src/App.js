@@ -1,16 +1,17 @@
 import './App.css';
-import PersonListGet from "./personList/PersonListGet";
-import PersonListPost from "./personList/PersonListPost";
-import PersonListDelete from "./personList/PersonListDelete";
-import PersonListPut from "./personList/PersonListPut";
+import Tasks from "./tasks/tasks"
+import PostTask from "./tasks/PostTask";
+import DeleteTask from "./tasks/DeleteTask";
+import PutTask from "./tasks/PutTask";
 
 function App() {
     return (
         <div>
-            <PersonListGet></PersonListGet>
-            <PersonListPost></PersonListPost>
-            <PersonListDelete></PersonListDelete>
-            <PersonListPut></PersonListPut>
+            <Tasks></Tasks>
+            <hr></hr>
+            <PostTask></PostTask>
+            <DeleteTask></DeleteTask>
+            <PutTask></PutTask>
         </div>
     );
 }

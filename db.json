@@ -1,22 +1,21 @@
 {
-  "users": [
+  "tasks": [
     {
-      "user": {
-        "name": "Joel Vontobel"
-      },
+      "description": "Hausaufgaben erledigen",
       "id": 1
     },
     {
-      "user": {
-        "name": "Quentin Herren"
-      },
+      "description": "Haus Arbeit machen",
       "id": 2
     },
     {
-      "user": {
-        "name": "Niculin Steiner"
-      },
+      "description": "Garten wässern",
       "id": 3
+    },
+    {
+      "description": "Garten düngen",
+      "id": 4
     }
-  ]
+  ],
+  "users": []
 }
