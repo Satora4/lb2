@@ -26,12 +26,10 @@ export default class DeleteTask extends React.Component {
 
     render() {
         return (
-            <div>
+            <div class="form">
                 <form onSubmit={this.handleSubmit}>
-                    <label>
-                    <h4>Task ID:</h4>
-                        <input type="text" name="id" onChange={this.handleChange}/>
-                    </label>
+                    <label>Task ID:</label>
+                    <input type="text" autoComplete="off" name="id" onChange={this.handleChange}/>
                     <button type="submit">Delete</button>
                 </form>
             </div>

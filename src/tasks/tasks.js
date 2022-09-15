@@ -20,9 +20,11 @@ export default class Tasks extends React.Component {
 
     render() {
         return (
-            <ul class="grid">
-                {this.state.tasks.map(task => <li><input type="checkbox"/>{task.id}, {task.description}</li>)}
-            </ul>
+            <div class="form">
+                <ul>
+                    {this.state.tasks.map(task => <li><input type="checkbox"/>{task.id}, {task.description}</li>)}
+                </ul>
+            </div>
         )
     }
 }

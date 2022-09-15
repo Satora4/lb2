@@ -1,18 +1,55 @@
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+
 import Tasks from "./tasks/tasks"
-import PostTask from "./tasks/PostTask";
+import AddTask from "./tasks/PostTask";
 import DeleteTask from "./tasks/DeleteTask";
-import PutTask from "./tasks/PutTask";
+import EditTask from "./tasks/PutTask";
 
 function App() {
     return (
-        <div>
-            <Tasks></Tasks>
-            <hr></hr>
-            <PostTask></PostTask>
-            <DeleteTask></DeleteTask>
-            <PutTask></PutTask>
-        </div>
+        <Router>
+            <div class="menu">
+                <nav>
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="li">
+                            <a href="/addTask">Add Task</a>
+                        </li>
+                        <li class="li">
+                            <a href="/deleteTask">Delete Task</a>
+                        </li>
+                        <li class="li">
+                            <a href="/editTask">Edit Task</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <Switch>
+                    <Route exact path="/">
+                        <Tasks/>
+                    </Route>
+                    <Route path="/addTask">
+                        <AddTask/>
+                        <Tasks/>
+                    </Route>
+                    <Route path="/deleteTask">
+                        <DeleteTask/>
+                        <Tasks/>
+                    </Route>
+                    <Route path="/editTask">
+                        <EditTask/>
+                        <Tasks/>
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     );
 }
 
