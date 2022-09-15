@@ -17,5 +17,11 @@
       "id": 4
     }
   ],
-  "users": []
+  "users": [
+    {
+      "name": "Test User",
+      "pw": 1234,
+      "id": 1
+    }
+  ]
 }

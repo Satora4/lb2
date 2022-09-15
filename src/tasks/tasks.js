@@ -20,7 +20,7 @@ export default class Tasks extends React.Component {
 
     render() {
         return (
-            <div class="form">
+            <div className="form">
                 <ul>
                     {this.state.tasks.map(task => <li><input type="checkbox"/>{task.id}, {task.description}</li>)}
                 </ul>
