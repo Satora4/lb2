@@ -36,15 +36,17 @@ export default class PutTask extends React.Component {
 
     render() {
         return (
-            <>
-                <h4>Axios PUT Request Example in React</h4>
+            <div class="form">
+                <form onClick={this.handleUpdate}>
+                    <h4>Axios PUT Request Example in React</h4>
+                    <label>Task Id:</label>
+                    <input type="number" autoComplete="off" name="id" onChange={this.idChange}/><br/>
+                    <label>New Task description:</label>
+                    <input type="text" autoComplete="off" name="description" onChange={this.desChange}/><br/>
 
-                <input type="number" name="id" onChange={this.idChange}/>
-
-                <input type="text" name="description" onChange={this.desChange}/>
-
-                <input type="button" name="update" value="Update" onClick={this.handleUpdate}/>
-            </>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
         )
     }
 }
