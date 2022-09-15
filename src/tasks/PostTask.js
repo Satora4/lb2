@@ -32,7 +32,7 @@ export default class PostTask extends React.Component {
 
     render() {
         return (
-            <div class="form">
+            <div className="form">
                 <form onSubmit={this.handleSubmit}>
                     <label>Description:</label>
                     <input type="text" autoComplete="off" name="description" onChange={this.handleChange}/>

@@ -36,7 +36,7 @@ export default class PutTask extends React.Component {
 
     render() {
         return (
-            <div class="form">
+            <div className="form">
                 <form onClick={this.handleUpdate}>
                     <h4>Axios PUT Request Example in React</h4>
                     <label>Task Id:</label>

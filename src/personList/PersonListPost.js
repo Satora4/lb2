@@ -18,7 +18,7 @@ export default class PersonList extends React.Component {
             name: this.state.name
         };
 
-        API.post(`users`, {user})
+        API.post(`users`, user)
             .then(res => {
                 console.log(res);
                 console.log(res.data);
